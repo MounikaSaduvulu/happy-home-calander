@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>March</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+}
+  .cal{
+   width: 100%;
+   height:auto
+   text-align: center;
+   font-size: 2em;
+   color:white;
+   grid-area: 1/1/1/8;
+   padding: -30px;
+   margin-right:-30px;
+ }
+ .cal img{
+   position: relative;
+ }
+ .cal h1{
+   position: absolute;
+   top:0%;
+   left:0%;
+   text-transform: uppercase;
+ }
+  .cal h2{
+   position: absolute;
+   top:23.5%;
+   left:35%;
+   text-align:left;
+   color:darkcyan;
+   font-weight: bolder;
+  font-size:70px;
+  background-color: whitesmoke;
+  
+  border-radius:50% 50% 0 0 ;
+  padding-left: 100px;
+  padding-right:100px;
+  padding:30px;
+  }
+  .grid{
+    display: grid;
+    background:#d1e0e0;
+    grid-template-columns: auto auto auto auto auto auto auto;
+  
+    grid-row-gap: 5px;
+    font-size: 2em;
+  }
+  .grid > div{
+  padding: 10px;
+ text-align: center;
+  background: whitesmoke;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+  box-shadow:1px 2px 5px 4px grey;
+  }
+  .weekname{
+    color:darkcyan;
+    font-weight: bolder;
+    
+  }
+  .temp1{
+    grid-column-start: 3;
+     border: 2px solid yellow;
+  }
+  h1{
+    color:darkcyan;
+    text-align: center;
+    font-family: 'Castoro', serif;
+    text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 5px 1px #b8b8b8, 
+      -4px 8px 0px #979797, 
+      -6px 11px 0px #747474,
+      -8px 14px 0px #565656,
+      -10px 17px 0px #343434,
+      -12px 20px 0px #171717,
+      -14px 23px 0px #000;
+  }
+  .one{
+    font-size: 70px;
+    padding:30px; 
+    position: absolute;
+    right:0;
+    text-align:center;
+    color:darkcyan;
+    background-color:carel;
+    border-radius:30px 0 0px 30px;
+    box-shadow:0  10px deeppink;
+    outline:none;
+    border:none;
+    }
+  .one:hover{background-color:pink;}
+  .one:active{
+      background:pink;
+      box-shadow:0 5px darkcyan;
+      transform:translateY(20px);
+    
+  }
+  
+.two{
+    font-size: 70px;
+    padding:30px; 
+    position: absolute;
+    left:0;
+    text-align:center;
+    color:darkcyan;
+    background-color:carel;
+    border-radius:0px 30px 30px 0px;
+    box-shadow:0  10px deeppink;
+    outline:none;
+    border:none;
+    }
+  .two:hover{background-color:pink;}
+  .two:active{
+      background:pink;
+      box-shadow:0 5px darkcyan;
+      transform:translateY(20px);
+    
+  }
+  #head{
+  font-size: 150px;color:deeppink;
+}
+    @media screen and (max-width:600px)
+{
+   .cal{
+   width: 100%;
+   height:auto;
+   text-align: center;
+   font-size:1px;
+   
+  
+   padding: -30px;
+   margin-right:-30px;
+ }
+   .cal h1{
+   position: absolute;
+   top:0%;
+   left:0%;
+   text-transform: uppercase;
+   font-size: 25px;
+   }
+  .cal h2{
+   position: absolute;
+   top:24%;
+   left:33%;
+   
+   color:darkcyan;
+   font-weight: bolder;
+  font-size:25px;
+  background-color: whitesmoke;
+  
+  border-radius:50% 50% 0 0 ;
+  padding-left: 11px;
+  padding-right:11px;
+  padding:12px;
+  }
+   .grid{
+    display: grid;
+    background:#d1e0e0;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-row-gap: 1px;
+     }
+  .grid > div{
+  font-size: 12px;
+ text-align: center;
+  background: whitesmoke;
+ padding: 14px;
+ 
+ padding-top: 20px;
+ padding-bottom: 20px;
+  box-shadow:1px 3px 3px 2px grey;
+  }
+  #head{
+    font-size: 50px;
+  }
+  h1{
+    color:darkcyan;
+    text-align: center;
+    font-family: 'Castoro', serif;
+    text-shadow: 0 2px 2px #dfdfdf, 
+      -2px 4px 0px #979797, 
+      -4px 6px 0px #747474,
+      -6px 8px 0px #000;
+     }
+    
+  .one{
+    font-size: 25px;
+    padding:10px; 
+    position: absolute;
+    right:0;
+    text-align:center;
+    color:darkcyan;
+    background-color:carel;
+    border-radius:15px 0 0px 15px;
+    box-shadow:0  9px deeppink;
+    outline:none;
+    border:none;
+    } 
+       
+  .two{
+    font-size: 25px;
+    padding:10px; 
+    position: absolute;
+    top:83.5%;
+    left:0;
+    text-align:center;
+    color:darkcyan;
+    background-color:carel;
+    border-radius:0px 15px 15px 0px;
+    box-shadow:0  9px deeppink;
+    outline:none;
+    border:none;
+    } 
+    .ind1{
+  font-size:10px;color:darkcyan; background-color:darkcyan;
+}
+  .ind2{
+  font-size:10px;color:#e6005c; background-color:#e6005c;
+}
+span{
+  font-size: 10px;
+}
+
+}
+</style>
+
+
+
+</head>
+
+<body>
+  
+ 
+   <div class="cal">
+   <img src="Gost8.jpeg" width="100%" height="auto">
+   <h1>Happy&nbsp; home&nbsp; Calander  <span id="head">2022</span></h1>
+   <h2>MARCH</h2>
+   
+   </div>
+    <div class="grid">
+    <div class="weekname" style="background-color: darkcyan;color:white;">Sun</div>
+    <div class="weekname">Mon</div>
+    <div class="weekname">Tue</div>
+    <div class="weekname">wed</div>
+    <div class="weekname">Thu</div>
+    <div class="weekname">Frid</div>
+    <div class="weekname">Sat</div>
+   
+    <div class="temp1">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div style="background-color: darkcyan;color:white">6</div>
+    <div>7</div>
+    <div >8</div>
+     <div >9</div>
+    <div>10</div>
+    <div >11</div>
+    <div style="background-color: darkcyan;color:white">12</div>
+    <div style="background-color: darkcyan;color:white">13</div>
+    <div >14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div style="background-color: darkcyan;color:white">20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+     <div>25</div>
+    <div>26</div>
+    <div style="background-color: darkcyan;color:white">27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+  
+  </div>
+<br>
+<a href="April.html"><button class="one">April</button></a>
+<br>
+<a href="Feb.html"><button class="two">Feb</button></a>
+<br><br><br><br><br>
+
+
+  
+</body>
+
+</html>
